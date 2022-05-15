@@ -1,37 +1,8 @@
 body {
-    background-image: url('memes/454238.jpg');
+    background-image: url('memes/back.jpg');
     width: 100vw;
     height: 100vh;
   }
-
-@media screen and (max-width: 767px){
-    .slider{
-      width: 80%;
-      margin: 0 1rem;
-      grid-template-areas: 
-                  "x x x"
-                  "a a a"
-                  "c c c"
-                  "b b b";
-    }
-  
-    .controls{
-      justify-content: center;
-    }
-    .btn{
-      width: 0.7rem;
-      height: 0.7rem;
-    }
-    .name{
-      font-size: 1.2rem;
-    }
-    .slider-img{
-      border-radius: 0.3rem;
-    }
-    .image{
-      border-radius: 0.3rem;
-    }
-}
 
 .container{
     display: flex;
@@ -74,7 +45,7 @@ input[name="point"]{
     width: 100%;
     background-color: #fff;
     border-radius: 1rem;
-    max-width: 30rem;
+    max-width: 27rem;
 }
   
 .slider-img{
@@ -118,7 +89,7 @@ input[name="point"]{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px;
+    padding: 0.1rem;
   }
   
 .btn{
@@ -194,18 +165,35 @@ input[name="point"]{
 #m5:checked ~.text .name:first-child{
     margin-left: -400%;
 }
-  
-  
-@media screen and (min-width: 768px) and (max-width:1279px){
-    .control-btn{
-      width: 0.8rem;
-      height: 0.8rem;
+
+@media screen and (max-width: 768px){
+    .slider{
+      width: 80%;
+      margin: 0 1rem;
+      grid-template-areas: 
+                  "x x x"
+                  "a a a"
+                  "c c c"
+                  "b b b";
     }
-    .text{
-      font-size: 1.35rem;
+  
+    .controls{
+      justify-content: center;
     }
-    .img-block{
-      border-radius: 0.5rem;
+    .comtrol{
+    padding: 0.5rem;
+    }
+    .btn{
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .name{
+      font-size: 1.8rem;
+    }
+    .slider-img{
+      border-radius: 0.3rem;
+    }
+    .image{
+      border-radius: 0.3rem;
     }
 }
-  
