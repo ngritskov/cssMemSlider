@@ -1,0 +1,211 @@
+body {
+    background-image: url('memes/454238.jpg');
+    width: 100vw;
+    height: 100vh;
+  }
+
+@media screen and (max-width: 767px){
+    .slider{
+      width: 80%;
+      margin: 0 1rem;
+      grid-template-areas: 
+                  "x x x"
+                  "a a a"
+                  "c c c"
+                  "b b b";
+    }
+  
+    .controls{
+      justify-content: center;
+    }
+    .btn{
+      width: 0.7rem;
+      height: 0.7rem;
+    }
+    .name{
+      font-size: 1.2rem;
+    }
+    .slider-img{
+      border-radius: 0.3rem;
+    }
+    .image{
+      border-radius: 0.3rem;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slider{
+    display: grid;
+    width: 60%;
+    margin: 0 2rem;
+    overflow: hidden;
+    grid-template-areas: 
+        "x x x"
+        "a a a"
+        "b b c";
+    background-color: rgb(255, 253, 126);
+    box-shadow: 0 0 0.5rem #000;
+    padding: 0.7rem;
+}
+
+input[name="point"]{
+    grid-area: x;
+    visibility: hidden;
+}
+  
+.memes{
+    display: flex;
+    justify-content: space-around;
+    width: 500%;
+    margin-bottom: 2rem;
+    grid-area: a;
+    transition: .5s;
+    align-items: center;
+}
+  
+.image{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    max-width: 30rem;
+}
+  
+.slider-img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 1rem;
+    display: flex;
+    user-select: none;
+}
+  
+.text{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    grid-area: b;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+  
+.name{
+    min-width: 100%;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    transition: .5s;
+
+}
+  
+.controls{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    grid-area: c;
+}
+  
+.control{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+  }
+  
+.btn{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 0.1rem solid #fff;
+    background-color: rgb(29, 136, 57);
+    cursor: pointer;
+    transition: .5s;    
+}
+  
+.control:hover .btn{
+    background-color: rgb(228, 232, 27);
+}
+  
+#m1:checked ~ .controls .control:nth-child(1) .btn{
+    background-color: #fff;
+}
+  
+#m1:checked ~.memes{
+    margin-left: 0;
+}
+  
+#m1:checked ~.text .name:first-child{
+    margin-left: 0;
+}
+  
+#m2:checked ~ .controls .control:nth-child(2) .btn{
+    background-color: #fff;
+}
+  
+#m2:checked ~.memes{
+    margin-left: -100%;
+}
+  
+#m2:checked ~.text .name:first-child{
+    margin-left: -100%;
+}
+  
+#m3:checked ~ .controls .control:nth-child(3) .btn{
+    background-color: #fff;
+}
+  
+#m3:checked ~.memes{
+    margin-left: -200%;
+}
+  
+#m3:checked ~.text .name:first-child{
+    margin-left: -200%;
+}
+  
+#m4:checked ~ .controls .control:nth-child(4) .btn{
+    background-color: #fff;
+}
+  
+#m4:checked ~.memes{
+    margin-left: -300%;
+}
+  
+#m4:checked ~.text .name:first-child{
+    margin-left: -300%;
+}
+  
+#m5:checked ~ .controls .control:nth-child(5) .btn{
+    background-color: #fff;
+}
+  
+#m5:checked ~.memes{
+    margin-left: -400%;
+}
+  
+#m5:checked ~.text .name:first-child{
+    margin-left: -400%;
+}
+  
+  
+@media screen and (min-width: 768px) and (max-width:1279px){
+    .control-btn{
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+    .text{
+      font-size: 1.35rem;
+    }
+    .img-block{
+      border-radius: 0.5rem;
+    }
+}
+  
