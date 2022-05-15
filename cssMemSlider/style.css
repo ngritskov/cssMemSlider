@@ -97,7 +97,7 @@ input[name="point"]{
     height: 2rem;
     border-radius: 50%;
     border: 0.1rem solid #fff;
-    background-color: rgb(18, 183, 62);
+    background-color: rgb(75, 183, 104);
     cursor: pointer;
     transition: .5s;    
 }
